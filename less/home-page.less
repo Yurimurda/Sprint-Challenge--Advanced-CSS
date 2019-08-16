@@ -1,12 +1,6 @@
 // Home Content
 
 .home {
-  h1 {
-    font-size: 4rem;
-  }
-
-
-
 
   .intro {
 
@@ -15,9 +9,9 @@
     }
 
     p {
-      padding: 0 15px;
+      padding:0 15px;
     }
-
+  
   }
 
   .space-images {
@@ -62,77 +56,20 @@
       p {
         margin-bottom: 26px;
       }
-    }
 
-    .signup {
-      .buttonSettings();
-
-    }
-
-    .btn :hover{
-      background-color: @shuttle-gray;
+      .btn {
+      }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-
+      
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
-
     }
-
   }
-
-
-
-  @media (max-width: 500px) {
-    p {
-      font-size: 2rem;
-      text-align: center;
-    }
-
-    .space-images .sky,
-    .launch {
-      display: none;
-    }
-
-    .space-images {
-      .flexColumn();
-      width: 100%;
-    }
-
-    .walk-text2 {
-      .flexColumn();
-
-    }
-
-    .walk-text2 p {
-      margin: 0 auto;
-      .flexColumn();
-      width: 100%;
-
-
-    }
-
-    h2,
-    h3 {
-      text-align: center;
-    }
-
-    .walk {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-
-    
-
-  }
-
-}
-
-// home
+}// home
