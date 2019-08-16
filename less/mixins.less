@@ -1,1 +1,18 @@
 // Mixins Here
+.buttonSettings(@bgcolor: @btn-bg-color, @width: 100px, @font-color: white) {
+    display: block;
+    background-color: @bgcolor;
+    margin: 0 10px 10px;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @font-color;
+    transition: relative;
+}
+
+.flexColumn(@flex: flex, @column: column){
+    display: @flex;
+    flex-direction: @column;
+}
