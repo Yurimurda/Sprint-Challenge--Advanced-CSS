@@ -95,7 +95,7 @@
 
 
 
-  @media (max-width: 500px) {
+  @media @phone {
 
     .walk {
       display: flex;
@@ -127,6 +127,8 @@
           }
         }
       }
+    
+    }
 
       .walk-img{
         width: 100%;
@@ -140,11 +142,10 @@
         text-align: center;
       }
 
-    }
+    
     .space-images{
       display: flex;
-      justify-content: center;
-        align-items: center;
+      .flexCenter();
         width: 100%;
 
       .sky,
@@ -161,20 +162,20 @@
     h3 {
       text-align: center;
     }
+  
 
 .intro{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  .flexCenter();
   .horizon{
     width: 100%;
   }
+
+
 }
-
-
+  
   }
-
 }
 
 // home
