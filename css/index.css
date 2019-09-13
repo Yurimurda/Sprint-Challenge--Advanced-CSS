@@ -164,7 +164,8 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 3%;
 }
 .navBar .topNav a {
   padding: 10px;
@@ -204,6 +205,12 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (@media: 500px) {
+  .home .space-images img {
+    width: 80%;
+    margin-left: 50px;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -229,7 +236,7 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .signup {
+.home .walk .signUp {
   display: block;
   background-color: #22283A;
   margin: 0 10px 10px;
@@ -247,6 +254,7 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+  width: 100%;
 }
 .home .walk .walk-img img {
   width: 100%;
@@ -254,36 +262,67 @@ footer {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .home p {
-    font-size: 2rem;
-    text-align: center;
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
   }
-  .home .space-images .sky,
-  .home .launch {
-    display: none;
+  .home .walk .walk-text {
+    width: 130%;
   }
-  .home .space-images {
+  .home .walk .walk-text p {
+    width: 100%;
+  }
+  .home .walk .walk-text .btn .signUp {
+    width: 95%;
+    justify-content: center;
+  }
+  .home .walk .walk-text .walk-text2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .walk .walk-text .walk-text2 .walk-text2 p {
+    width: 50%;
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .home .walk-text2 {
-    display: flex;
-    flex-direction: column;
+  .home .walk .walk-img {
+    width: 100%;
   }
-  .home .walk-text2 p {
-    margin: 0 auto;
+  .home .walk .walk-img .space-walk {
+    width: 100%;
+  }
+  .home .walk p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .home .space-images {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    display: flex;
     width: 100%;
   }
   .home h2,
   .home h3 {
     text-align: center;
   }
-  .home .walk {
+  .home .intro {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+  }
+  .home .intro .horizon {
+    width: 100%;
   }
 }

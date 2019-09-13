@@ -30,6 +30,11 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 80%;
+        margin-left: 50px;
+      }
     }
   }
 
@@ -64,18 +69,19 @@
       }
     }
 
-    .signup {
+    .signUp {
       .buttonSettings();
 
     }
 
-    .btn :hover{
+    .btn :hover {
       background-color: @shuttle-gray;
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      width: 100%;
 
       img {
         width: 100%;
@@ -90,46 +96,82 @@
 
 
   @media (max-width: 500px) {
-    p {
-      font-size: 2rem;
-      text-align: center;
+
+    .walk {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+        width: 100%;
+
+      .walk-text {
+        
+        width: 130%;
+        
+        p{
+          width: 100%;
+        }
+        .btn{
+          .signUp{
+            width: 95%;
+            justify-content: center;
+          }
+        }
+        .walk-text2 {
+          .flexColumn();
+
+          .walk-text2 p {
+            width: 50%;
+            .flexColumn();
+            
+            width: 100%;
+          }
+        }
+      }
+
+      .walk-img{
+        width: 100%;
+        .space-walk{
+          width: 100%;
+        }
+      }
+
+      p {
+        font-size: 2rem;
+        text-align: center;
+      }
+
     }
+    .space-images{
+      display: flex;
+      justify-content: center;
+        align-items: center;
+        width: 100%;
 
-    .space-images .sky,
-    .launch {
-      display: none;
-    }
-
-    .space-images {
-      .flexColumn();
-      width: 100%;
-    }
-
-    .walk-text2 {
-      .flexColumn();
-
-    }
-
-    .walk-text2 p {
-      margin: 0 auto;
-      .flexColumn();
-      width: 100%;
-
-
-    }
+      .sky,
+      .launch {
+        display: none;
+      }
+      .blast{
+        display: flex;
+        width: 100%;
+      }
+    } 
 
     h2,
     h3 {
       text-align: center;
     }
 
-    .walk {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-    }
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .horizon{
+    width: 100%;
+  }
+}
 
-    
 
   }
 
